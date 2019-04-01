@@ -7,7 +7,7 @@
     <link rel="icon" href="demo_icon.gif" type="image/gif" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
@@ -15,18 +15,18 @@
   </head>
   <body>
     <header>
-      <h1>Get to Know 18 Web Development Mascots</h1>
+      <h1>Get to Know Mascots in Web Development World</h1>
     </header>
     <section>
       <div class="container">
         <ul class="cards">
           <li class="android">
-            <div class="front">
+            <div class="android_front">
               <img src="mascots/android.png" class="image" />
             </div>
-            <div class="back">
+            <div class="android_back">
               <img src="icons/android.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 Android is a mobile operating system developed by Google. It is
                 based on a modified version of the Linux kernel and other open
@@ -35,13 +35,33 @@
               </p>
             </div>
           </li>
-          <li class="ios">
-            <div class="front">
-              <img src="mascots/ios.png" class="image" />
+          <li class="stackoverflow">
+            <div class="stackoverflow_front">
+              <img
+                src="mascots/stackoverflow.png"
+                alt="stackoverflow"
+                class="image"
+              />
             </div>
-            <div class="back">
+            <div class="stackoverflow_back">
+              <img src="icons/stackoverflow.svg" class="icon" />
+              <div class="divider_dark"></div>
+              <p>
+                Stack Overflow is a question and answer site for enthusiast
+                programmers. It is a privately held website, the flagship site
+                of the Stack Exchange Network, created in 2008 by Jeff Atwood
+                and Joel Spolsky. It features questions and answers on a wide
+                range of topics in programming.
+              </p>
+            </div>
+          </li>
+          <li class="ios">
+            <div class="ios_front">
+              <img src="mascots/apple.png" class="image" />
+            </div>
+            <div class="ios_back">
               <img src="icons/ios.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 iOS is a mobile operating system created and developed by Apple
                 Inc. exclusively for its hardware. It is the operating system
@@ -51,12 +71,12 @@
             </div>
           </li>
           <li class="github">
-            <div class="front">
+            <div class="github_front">
               <img src="mascots/octocat.png" class="image" />
             </div>
-            <div class="back">
+            <div class="github_back">
               <img src="icons/github.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
                 GitHub is a web-based hosting service for version control using
                 Git. It is mostly used for computer code. It offers all of the
@@ -66,12 +86,12 @@
             </div>
           </li>
           <li class="gitkraken">
-            <div class="front">
+            <div class="gitkraken_front">
               <img src="mascots/gitkraken.png" class="image" />
             </div>
-            <div class="back">
+            <div class="gitkraken_back">
               <img src="icons/gitkraken.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 Axosoft GitKraken is a cross-platform Git client with
                 efficiency, elegance and reliability at the core. It was made
@@ -81,12 +101,12 @@
             </div>
           </li>
           <li class="gitlab">
-            <div class="front">
+            <div class="gitlab_front">
               <img src="mascots/gitlab.png" class="image" />
             </div>
-            <div class="back">
+            <div class="gitlab_back">
               <img src="icons/gitlab.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 GitLab is a web-based DevOps lifecycle tool that provides a
                 Git-repository manager providing wiki, issue-tracking and CI/CD
@@ -96,12 +116,12 @@
             </div>
           </li>
           <li class="bootstrap">
-            <div class="front">
+            <div class="bootstrap_front">
               <img src="mascots/bootstrap.png" class="image" />
             </div>
-            <div class="back">
+            <div class="bootstrap_back">
               <img src="icons/bootstrap.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
                 Bootstrap is a free and open-source front-end web framework. It
                 contains HTML and CSS-based design templates for typography,
@@ -110,29 +130,13 @@
               </p>
             </div>
           </li>
-          <li class="stackoverflow">
-            <div class="front">
-              <img src="mascots/stackoverflow.png" class="image" />
-            </div>
-            <div class="back">
-              <img src="icons/stackoverflow.svg" class="icon" />
-              <div class="divider"></div>
-              <p>
-                Stack Overflow is a question and answer site for professional
-                and enthusiast programmers. It is a privately held website, the
-                flagship site of the Stack Exchange Network, created in 2008 by
-                Jeff Atwood and Joel Spolsky. It features questions and answers
-                on a wide range of topics in computer programming.
-              </p>
-            </div>
-          </li>
           <li class="foundation">
-            <div class="front">
+            <div class="foundation_front">
               <img src="mascots/foundation.png" class="image" />
             </div>
-            <div class="back">
+            <div class="foundation_back">
               <img src="icons/foundation.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 Foundation is a family of responsive front-end frameworks that
                 make it easy to design beautiful responsive websites, apps and
@@ -142,75 +146,60 @@
             </div>
           </li>
           <li class="gruntjs">
-            <div class="front">
-              <img src="mascots/grunt.png" class="image" />
+            <div class="grunt_front">
+              <img src="mascots/gruntjs.png" class="image" />
             </div>
-            <div class="back">
+            <div class="grunt_back">
               <img src="icons/grunt.js.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
                 Grunt is a JavaScript task runner, a tool used to automatically
-                perform frequent tasks such as minification, compilation, unit
-                testing, and linting. It uses a command-line interface to run
-                custom tasks defined in a file. Grunt was created by Ben Alman
-                and is written in Node.js. It is distributed via npm.
+                perform frequent tasks such as minification, compilation, and
+                linting. It uses a command-line interface to run custom tasks
+                defined in a file. Grunt was created by Ben Alman and is written
+                in Node.js.
               </p>
             </div>
           </li>
           <li class="nodejs">
-            <div class="front">
+            <div class="nodejs_front">
               <img src="mascots/nodejs.png" class="image" />
             </div>
-            <div class="back">
+            <div class="nodejs_back">
               <img src="icons/node.js.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
-                Node.js is an open-source, cross-platform JavaScript run-time
-                environment that executes JavaScript code outside of a browser.
-                JavaScript is used primarily for client-side scripting, in which
-                scripts written in JavaScript are embedded in a webpage's HTML
-                and run client-side by a JavaScript engine in the user's web
-                browser.
+                Node.js is a cross-platform JavaScript run-time environment that
+                executes JavaScript code outside of a browser. JavaScript is
+                used primarily for client-side scripting, in which scripts
+                written in JavaScript are embedded in a webpage's HTML and run
+                client-side by a JavaScript engine in the user's web browser.
               </p>
             </div>
           </li>
           <li class="jquery">
-            <div class="front">
+            <div class="jquery_front">
               <img src="mascots/jquery.png" class="image" />
             </div>
-            <div class="back">
+            <div class="jquery_back">
               <img src="icons/jquery.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
                 jQuery is a JavaScript library designed to simplify HTML DOM
                 tree traversal and manipulation, as well as event handling, CSS
-                animation, and Ajax.
+                animation, and Ajax. It is free, open-source software using the
+                permissive MIT License. Web analysis indicates that it is the
+                most widely deployed JavaScript library by a large margin.
               </p>
             </div>
           </li>
-          <li class="sass">
-            <div class="front">
-              <img src="mascots/sass.png" class="image" />
-            </div>
-            <div class="back">
-              <img src="icons/sass.svg" class="icon" />
-              <div class="divider"></div>
-              <p>
-                Sass is a style sheet language initially designed by Henry
-                Thornton and developed by Natalie Weizenbaum. After its initial
-                versions, Weizenbaum and Chris Eppstein have continued to extend
-                Sass with SassScript, a simple scripting language used in Sass
-                files.
-              </p>
-            </div>
-          </li>
-          <li class="amber">
-            <div class="front">
+          <li class="ember">
+            <div class="ember_front">
               <img src="mascots/ember.png" class="image" />
             </div>
-            <div class="back">
+            <div class="ember_back">
               <img src="icons/ember.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
                 Ember.js is an open-source JavaScript web framework, based on
                 the Model–view–viewmodel pattern. It allows developers to create
@@ -219,26 +208,44 @@
               </p>
             </div>
           </li>
+          <li class="sass">
+            <div class="sass_front">
+              <img src="mascots/sass.png" class="image" />
+            </div>
+            <div class="sass_back">
+              <img src="icons/sass.svg" class="icon" />
+              <div class="divider_light"></div>
+              <p>
+                Sass is a style sheet language initially designed by Henry
+                Thornton and developed by Natalie Weizenbaum. After its initial
+                versions, Weizenbaum and Chris Eppstein have continued to extend
+                Sass with SassScript, a scripting language used in Sass files.
+              </p>
+            </div>
+          </li>
+
           <li class="less">
-            <div class="front">
+            <div class="less_front">
               <img src="mascots/less.png" class="image" />
             </div>
-            <div class="back">
+            <div class="less_back">
               <img src="icons/less.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
-                Less (which stands for Leaner Style Sheets) is a
-                backwards-compatible language extension for CSS.
+                Less is a dynamic preprocessor style sheet language that can be
+                compiled into Cascading Style Sheets and run on the client side
+                or server side. Designed by Alexis Sellier, Less is influenced
+                by Sass and has influenced the newer "SCSS" syntax of Sass.
               </p>
             </div>
           </li>
           <li class="react">
-            <div class="front">
+            <div class="react_front">
               <img src="mascots/react.png" class="image" />
             </div>
-            <div class="back">
+            <div class="react_back">
               <img src="icons/react.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 React is a JavaScript library for building user interfaces. It
                 is maintained by Facebook and a community of individual
@@ -248,12 +255,12 @@
             </div>
           </li>
           <li class="redux">
-            <div class="front">
+            <div class="redux_front">
               <img src="mascots/redux.png" class="image" />
             </div>
-            <div class="back">
+            <div class="redux_back">
               <img src="icons/redux.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 Redux is an open-source JavaScript library for managing
                 application state. It is most commonly used with libraries such
@@ -264,12 +271,12 @@
             </div>
           </li>
           <li class="angular">
-            <div class="front">
+            <div class="angular_front">
               <img src="mascots/angular.png" class="image" />
             </div>
-            <div class="back">
+            <div class="angular_back">
               <img src="icons/angular.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_light"></div>
               <p>
                 Angular is a TypeScript-based open-source web application
                 framework led by the Angular Team at Google and by a community
@@ -279,15 +286,17 @@
             </div>
           </li>
           <li class="vue">
-            <div class="front">
+            <div class="vue_front">
               <img src="mascots/vue.png" class="image" />
             </div>
-            <div class="back">
+            <div class="vue_back">
               <img src="icons/vue.svg" class="icon" />
-              <div class="divider"></div>
+              <div class="divider_dark"></div>
               <p>
                 Vue.js is an open-source JavaScript framework for building user
-                interfaces and single-page applications.
+                interfaces and single-page applications. Unlike other monolithic
+                frameworks, Vue is designed from the ground up to be
+                incrementally adoptable.
               </p>
             </div>
           </li>

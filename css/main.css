@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #333;
+  background-color: #252525;
   font-family: "Roboto", sans-serif;
   line-height: 1.5; }
 
@@ -14,105 +14,164 @@ ul li {
   list-style: none;
   position: relative; }
 
-.divider {
-  border: 1px solid rgba(255, 255, 255, 0.7);
+.divider_light {
+  border: 1px solid #ffffff;
+  opacity: 0.5;
+  border-radius: 10px;
   width: 80%;
-  margin: 0.5rem auto; }
+  margin: 1rem auto; }
+
+.divider_dark {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 70%;
+  margin: 1rem auto; }
 
 header h1 {
   text-align: center;
-  margin: 1rem 0;
-  color: #ffffff; }
+  margin: 3rem 0;
+  color: #ffffff;
+  font-size: 2.7rem;
+  letter-spacing: 2.7px; }
 
 .image {
   display: block;
   width: 100%; }
 
 .icon {
-  width: 75px;
-  margin: auto;
+  width: 270px;
+  height: 100px;
+  padding: 0.3rem 0;
+  margin: 0.5rem auto;
   display: block; }
 
+svg {
+  width: 85%;
+  display: block;
+  margin: auto;
+  padding: 3.9rem 0; }
+
 p {
-  padding: 1.3rem;
-  font-size: 0.7rem; }
+  padding: 0rem 2.7rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-weight: 400; }
 
 section .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 5rem auto;
-  padding: 0 2rem; }
+  padding: 0 2.7rem; }
   section .container .cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, minmax(auto, 250px));
-    grid-template-areas: ". android . ios ." ". github gitkraken gitlab ." ". bootstrap stackoverflow foundation ." ". gruntjs nodejs jquery ." ". sass less amber ." "redux react . angular vue";
-    grid-gap: 30px; }
-    section .container .cards .android {
-      grid-area: android;
-      background: #1b7662; }
-    section .container .cards .ios {
-      grid-area: ios;
-      background: #171119; }
-    section .container .cards .github {
-      grid-area: github;
-      background: #ffffff; }
-    section .container .cards .gitkraken {
-      grid-area: gitkraken;
-      background: #0e1214; }
-    section .container .cards .gitlab {
-      grid-area: gitlab;
-      background: #252e33; }
-    section .container .cards .bootstrap {
-      grid-area: bootstrap;
-      background: #633f8f; }
-    section .container .cards .stackoverflow {
-      grid-area: stackoverflow;
-      background: #414161; }
-    section .container .cards .foundation {
-      grid-area: foundation;
-      background: #148d9f; }
-    section .container .cards .gruntjs {
-      grid-area: gruntjs;
-      background: #1a42ab; }
-    section .container .cards .nodejs {
-      grid-area: nodejs;
-      background: #1a2725; }
-    section .container .cards .jquery {
-      grid-area: jquery;
-      background: #3a4040; }
-    section .container .cards .sass {
-      grid-area: sass;
-      background: #2e011b; }
-    section .container .cards .less {
-      grid-area: less;
-      background: #cfc4ce; }
-    section .container .cards .amber {
-      grid-area: amber;
-      background: #e04e39; }
-    section .container .cards .react {
-      grid-area: react;
-      background: #211d00; }
-    section .container .cards .redux {
-      grid-area: redux;
-      background: #211d00; }
-    section .container .cards .angular {
-      grid-area: angular;
-      background: #0e72c3; }
-    section .container .cards .vue {
-      grid-area: vue;
-      background: #f4f4f4; }
-    section .container .cards div.back {
-      transform: rotateY(90deg); }
-    section .container .cards div.front {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 2.7rem; }
+    section .container .cards .android_front,
+    section .container .cards .android_back {
+      background-color: #1b7662;
+      color: #ffffff; }
+    section .container .cards .stackoverflow_front,
+    section .container .cards .stackoverflow_back {
+      background-color: #f7f7f7;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .ios_front,
+    section .container .cards .ios_back {
+      background-color: #171119;
+      color: rgba(255, 255, 255, 0.7); }
+    section .container .cards .github_front,
+    section .container .cards .github_back {
+      background-color: #ffffff;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .gitkraken_front,
+    section .container .cards .gitkraken_back {
+      background-color: #0e1214;
+      color: #ffffff; }
+    section .container .cards .gitlab_front,
+    section .container .cards .gitlab_back {
+      background-color: #464242;
+      color: #ffffff; }
+    section .container .cards .bootstrap_front,
+    section .container .cards .bootstrap_back {
+      background-color: #e4e4e4;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .foundation_front,
+    section .container .cards .foundation_back {
+      background-color: #148d9f;
+      color: #ffffff; }
+    section .container .cards .grunt_front,
+    section .container .cards .grunt_back {
+      background-color: #d3d3d3;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .nodejs_front,
+    section .container .cards .nodejs_back {
+      background-color: #f0f0f0;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .jquery_front,
+    section .container .cards .jquery_back {
+      background-color: #dadada;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .ember_front,
+    section .container .cards .ember_back {
+      background-color: #ebebeb;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .sass_front,
+    section .container .cards .sass_back {
+      background-color: #220416;
+      color: #ffffff; }
+    section .container .cards .less_front,
+    section .container .cards .less_back {
+      background-color: #cfc4ce;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards .react_front,
+    section .container .cards .react_back {
+      background-color: #242424;
+      color: #ffffff; }
+    section .container .cards .redux_front,
+    section .container .cards .redux_back {
+      background-color: #242424;
+      color: #ffffff; }
+    section .container .cards .angular_front,
+    section .container .cards .angular_back {
+      background-color: #0e72c3;
+      color: #ffffff; }
+    section .container .cards .vue_front,
+    section .container .cards .vue_back {
+      background-color: #f4f4f4;
+      color: rgba(0, 0, 0, 0.9); }
+    section .container .cards [class$="back"] {
+      transform: rotateY(90deg);
+      padding: 1.5rem 0; }
+    section .container .cards [class$="front"] {
       position: absolute; }
-    section .container .cards li:hover div.front {
-      animation: twirl 0.2s ease-in forwards; }
-    section .container .cards li:hover div.back {
-      animation: twirl 0.2 0.2s ease-out forwards reverse; }
+    section .container .cards li:hover [class$="front"] {
+      animation: flip 0.2s ease-in forwards; }
+    section .container .cards li:hover [class$="back"] {
+      animation: flip 0.2s 0.2s ease-out forwards reverse; }
 
-@keyframes twirl {
+@keyframes flip {
   0% {
     transform: rotateY(0deg); }
   100% {
     transform: rotateY(90deg); } }
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
+    padding: 0.5rem; }
+  section .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5rem; } }
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    padding: 0.5rem; }
+  section .container .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px; } }
