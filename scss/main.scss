@@ -1,0 +1,247 @@
+@import "variables";
+// Universal
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgColor;
+  font-family: $mainFont;
+  line-height: 1.5;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+// Utilities
+.divider_light {
+  border: 1px solid $primaryColor;
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.divider_dark {
+  border: 1px solid $darkColor;
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+header h1 {
+  text-align: center;
+  margin: 3rem 0;
+  color: $primaryColor;
+  font-size: 2.7rem;
+  letter-spacing: 2.7px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.icon {
+  width: 270px;
+  height: 100px;
+  padding: 0.3rem 0;
+  margin: 1rem auto;
+  display: block;
+}
+
+svg {
+  width: 85%;
+  display: block;
+  margin: auto;
+  padding: 3.9rem 0;
+}
+
+p {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+section .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 50px;
+    .android_front,
+    .android_back {
+      background-color: $android;
+      color: $primaryColor;
+      border: $borderWidth solid $primaryColor;
+      border-radius: $borderRadius;
+    }
+    .stackoverflow_front,
+    .stackoverflow_back {
+      background-color: $stackoverflow;
+      color: $darkColor;
+      border: $borderWidth solid rgb(218, 104, 11);
+      border-radius: $borderRadius;
+    }
+    .ios_front,
+    .ios_back {
+      background-color: $ios;
+      color: $secondaryColor;
+      border: $borderWidth solid $primaryColor;
+      border-radius: $borderRadius;
+    }
+    .github_front,
+    .github_back {
+      background-color: $github;
+      color: $darkColor;
+      border: $borderWidth solid rgb(100, 100, 100);
+      border-radius: $borderRadius;
+    }
+    .gitkraken_front,
+    .gitkraken_back {
+      background-color: $gitkraken;
+      color: $primaryColor;
+      border: $borderWidth solid $primaryColor;
+      border-radius: $borderRadius;
+    }
+    .gitlab_front,
+    .gitlab_back {
+      background-color: $gitlab;
+      color: $primaryColor;
+      border: $borderWidth solid rgb(236, 44, 18);
+      border-radius: $borderRadius;
+    }
+    .bootstrap_front,
+    .bootstrap_back {
+      background-color: $bootstrap;
+      color: $darkColor;
+      border: $borderWidth solid rgb(139, 39, 170);
+      border-radius: $borderRadius;
+    }
+    .foundation_front,
+    .foundation_back {
+      background-color: $foundation;
+      color: $primaryColor;
+      border: $borderWidth solid $primaryColor;
+      border-radius: $borderRadius;
+    }
+    .grunt_front,
+    .grunt_back {
+      background-color: $gruntjs;
+      color: $darkColor;
+      border: $borderWidth solid rgb(218, 104, 11);
+      border-radius: $borderRadius;
+    }
+    .nodejs_front,
+    .nodejs_back {
+      background-color: $nodejs;
+      color: $darkColor;
+      border: $borderWidth solid rgb(46, 170, 57);
+      border-radius: $borderRadius;
+    }
+    .jquery_front,
+    .jquery_back {
+      background-color: $jquery;
+      color: $darkColor;
+      border: $borderWidth solid rgb(24, 104, 252);
+      border-radius: $borderRadius;
+    }
+    .ember_front,
+    .ember_back {
+      background-color: $ember;
+      color: $darkColor;
+      border: $borderWidth solid rgb(202, 63, 44);
+      border-radius: $borderRadius;
+    }
+    .sass_front,
+    .sass_back {
+      background-color: $sass;
+      color: $primaryColor;
+      border: $borderWidth solid rgb(205, 103, 153);
+      border-radius: $borderRadius;
+    }
+    .less_front,
+    .less_back {
+      background-color: $less;
+      color: $darkColor;
+      border: $borderWidth solid rgb(134, 123, 233);
+      border-radius: $borderRadius;
+    }
+    .react_front,
+    .react_back {
+      background-color: $react;
+      color: $primaryColor;
+      border: $borderWidth solid #00d8ff;
+      border-radius: $borderRadius;
+    }
+    .redux_front,
+    .redux_back {
+      background-color: $redux;
+      color: $primaryColor;
+      border: $borderWidth solid #7e37da;
+      border-radius: $borderRadius;
+    }
+    .angular_front,
+    .angular_back {
+      background-color: $angular;
+      color: $primaryColor;
+      border: $borderWidth solid $primaryColor;
+      border-radius: $borderRadius;
+    }
+    .vue_front,
+    .vue_back {
+      background-color: $vue;
+      color: $darkColor;
+      border: $borderWidth solid #42b883;
+      border-radius: $borderRadius;
+    }
+    /// Animation ///
+    [class$="back"] {
+      transform: rotateY(90deg);
+    }
+
+    [class$="front"] {
+      position: absolute;
+    }
+
+    li:hover [class$="front"] {
+      animation: flip 0.2s ease-in forwards;
+    }
+
+    li:hover [class$="back"] {
+      animation: flip 0.2s 0.2s ease-out forwards reverse;
+    }
+
+    @keyframes flip {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(90deg);
+      }
+    }
+  }
+}
+
+footer {
+  padding-bottom: 1rem;
+  p {
+    color: $primaryColor;
+    text-align: center;
+  }
+}
+
+@import "responsive";

@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #252525;
+  background-color: #252323;
   font-family: "Roboto", sans-serif;
   line-height: 1.5; }
 
@@ -43,7 +43,7 @@ header h1 {
   width: 270px;
   height: 100px;
   padding: 0.3rem 0;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   display: block; }
 
 svg {
@@ -53,7 +53,7 @@ svg {
   padding: 3.9rem 0; }
 
 p {
-  padding: 0rem 2.7rem;
+  padding: 1rem 2.5rem;
   font-size: 1rem;
   line-height: 1.7;
   letter-spacing: 1px;
@@ -63,87 +63,122 @@ section .container {
   width: 100%;
   max-width: 1400px;
   margin: 5rem auto;
-  padding: 0 2.7rem; }
+  padding: 0 2rem; }
   section .container .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 2.7rem; }
+    grid-gap: 50px; }
     section .container .cards .android_front,
     section .container .cards .android_back {
       background-color: #1b7662;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
     section .container .cards .stackoverflow_front,
     section .container .cards .stackoverflow_back {
       background-color: #f7f7f7;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #da680b;
+      border-radius: 17px; }
     section .container .cards .ios_front,
     section .container .cards .ios_back {
       background-color: #171119;
-      color: rgba(255, 255, 255, 0.7); }
+      color: rgba(255, 255, 255, 0.7);
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
     section .container .cards .github_front,
     section .container .cards .github_back {
       background-color: #ffffff;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #646464;
+      border-radius: 17px; }
     section .container .cards .gitkraken_front,
     section .container .cards .gitkraken_back {
       background-color: #0e1214;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
     section .container .cards .gitlab_front,
     section .container .cards .gitlab_back {
       background-color: #464242;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #ec2c12;
+      border-radius: 17px; }
     section .container .cards .bootstrap_front,
     section .container .cards .bootstrap_back {
       background-color: #e4e4e4;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #8b27aa;
+      border-radius: 17px; }
     section .container .cards .foundation_front,
     section .container .cards .foundation_back {
       background-color: #148d9f;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
     section .container .cards .grunt_front,
     section .container .cards .grunt_back {
       background-color: #d3d3d3;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #da680b;
+      border-radius: 17px; }
     section .container .cards .nodejs_front,
     section .container .cards .nodejs_back {
       background-color: #f0f0f0;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #2eaa39;
+      border-radius: 17px; }
     section .container .cards .jquery_front,
     section .container .cards .jquery_back {
       background-color: #dadada;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #1868fc;
+      border-radius: 17px; }
     section .container .cards .ember_front,
     section .container .cards .ember_back {
       background-color: #ebebeb;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #ca3f2c;
+      border-radius: 17px; }
     section .container .cards .sass_front,
     section .container .cards .sass_back {
       background-color: #220416;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #cd6799;
+      border-radius: 17px; }
     section .container .cards .less_front,
     section .container .cards .less_back {
       background-color: #cfc4ce;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #867be9;
+      border-radius: 17px; }
     section .container .cards .react_front,
     section .container .cards .react_back {
       background-color: #242424;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #00d8ff;
+      border-radius: 17px; }
     section .container .cards .redux_front,
     section .container .cards .redux_back {
       background-color: #242424;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #7e37da;
+      border-radius: 17px; }
     section .container .cards .angular_front,
     section .container .cards .angular_back {
       background-color: #0e72c3;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
     section .container .cards .vue_front,
     section .container .cards .vue_back {
       background-color: #f4f4f4;
-      color: rgba(0, 0, 0, 0.9); }
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #42b883;
+      border-radius: 17px; }
     section .container .cards [class$="back"] {
-      transform: rotateY(90deg);
-      padding: 1.5rem 0; }
+      transform: rotateY(90deg); }
     section .container .cards [class$="front"] {
       position: absolute; }
     section .container .cards li:hover [class$="front"] {
@@ -157,12 +192,18 @@ section .container {
   100% {
     transform: rotateY(90deg); } }
 
+footer {
+  padding-bottom: 1rem; }
+  footer p {
+    color: #ffffff;
+    text-align: center; }
+
 @media (max-width: 1024px) {
   header h1 {
     font-size: 2rem;
     padding: 0.5rem; }
   section .container .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 5rem; } }
 
