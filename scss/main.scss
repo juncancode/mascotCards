@@ -79,9 +79,9 @@ section .container {
   padding: 0 2rem;
   .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-auto-flow: dense;
+    grid-gap: 30px;
     .android_front,
     .android_back {
       background-color: $android;
@@ -211,10 +211,12 @@ section .container {
     /// Animation ///
     [class$="back"] {
       transform: rotateY(90deg);
+      margin: 1rem 0;
     }
 
     [class$="front"] {
       position: absolute;
+      margin: 1rem 0;
     }
 
     li:hover [class$="front"] {
