@@ -1,277 +1,217 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   background-color: #252323;
   font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 ul li {
   padding: 0;
   margin: 0;
   list-style: none;
-  position: relative;
-}
+  position: relative; }
 
 .divider_light {
   border: 1px solid #ffffff;
   opacity: 0.5;
   border-radius: 10px;
   width: 80%;
-  margin: 1rem auto;
-}
+  margin: 1rem auto; }
 
 .divider_dark {
   border: 1px solid rgba(0, 0, 0, 0.9);
   opacity: 0.5;
   border-radius: 10px;
   width: 70%;
-  margin: 1rem auto;
-}
+  margin: 1rem auto; }
 
 header h1 {
   text-align: center;
   margin: 3rem 0;
   color: #ffffff;
   font-size: 2.7rem;
-  letter-spacing: 2.7px;
-}
+  letter-spacing: 2.7px; }
 
 .image {
   display: block;
-  width: 100%;
-}
+  width: 100%; }
 
 .icon {
   width: 270px;
   height: 100px;
   padding: 0.3rem 0;
   margin: 1rem auto;
-  display: block;
-}
+  display: block; }
 
 svg {
   width: 85%;
   display: block;
   margin: auto;
-  padding: 3.9rem 0;
-}
+  padding: 3.9rem 0; }
 
 p {
   padding: 1rem 2.5rem;
   font-size: 1rem;
   line-height: 1.7;
   letter-spacing: 1px;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 section .container {
   width: 100%;
   max-width: 1400px;
   margin: 5rem auto;
-  padding: 0 2rem;
-}
-section .container .cards {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, auto));
-  grid-auto-flow: dense;
-  grid-gap: 30px;
-}
-section .container .cards .android_front,
-section .container .cards .android_back {
-  background-color: #1b7662;
-  color: #ffffff;
-  border: 3.7px solid #ffffff;
-  border-radius: 17px;
-}
-section .container .cards .stackoverflow_front,
-section .container .cards .stackoverflow_back {
-  background-color: #f7f7f7;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #da680b;
-  border-radius: 17px;
-}
-section .container .cards .ios_front,
-section .container .cards .ios_back {
-  background-color: #171119;
-  color: rgba(255, 255, 255, 0.7);
-  border: 3.7px solid #ffffff;
-  border-radius: 17px;
-}
-section .container .cards .github_front,
-section .container .cards .github_back {
-  background-color: #ffffff;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #646464;
-  border-radius: 17px;
-}
-section .container .cards .gitkraken_front,
-section .container .cards .gitkraken_back {
-  background-color: #0e1214;
-  color: #ffffff;
-  border: 3.7px solid #ffffff;
-  border-radius: 17px;
-}
-section .container .cards .gitlab_front,
-section .container .cards .gitlab_back {
-  background-color: #464242;
-  color: #ffffff;
-  border: 3.7px solid #ec2c12;
-  border-radius: 17px;
-}
-section .container .cards .bootstrap_front,
-section .container .cards .bootstrap_back {
-  background-color: #e4e4e4;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #8b27aa;
-  border-radius: 17px;
-}
-section .container .cards .foundation_front,
-section .container .cards .foundation_back {
-  background-color: #148d9f;
-  color: #ffffff;
-  border: 3.7px solid #ffffff;
-  border-radius: 17px;
-}
-section .container .cards .grunt_front,
-section .container .cards .grunt_back {
-  background-color: #d3d3d3;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #da680b;
-  border-radius: 17px;
-}
-section .container .cards .nodejs_front,
-section .container .cards .nodejs_back {
-  background-color: #f0f0f0;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #2eaa39;
-  border-radius: 17px;
-}
-section .container .cards .jquery_front,
-section .container .cards .jquery_back {
-  background-color: #dadada;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #1868fc;
-  border-radius: 17px;
-}
-section .container .cards .ember_front,
-section .container .cards .ember_back {
-  background-color: #ebebeb;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #ca3f2c;
-  border-radius: 17px;
-}
-section .container .cards .sass_front,
-section .container .cards .sass_back {
-  background-color: #220416;
-  color: #ffffff;
-  border: 3.7px solid #cd6799;
-  border-radius: 17px;
-}
-section .container .cards .less_front,
-section .container .cards .less_back {
-  background-color: #cfc4ce;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #867be9;
-  border-radius: 17px;
-}
-section .container .cards .react_front,
-section .container .cards .react_back {
-  background-color: #242424;
-  color: #ffffff;
-  border: 3.7px solid #00d8ff;
-  border-radius: 17px;
-}
-section .container .cards .redux_front,
-section .container .cards .redux_back {
-  background-color: #242424;
-  color: #ffffff;
-  border: 3.7px solid #7e37da;
-  border-radius: 17px;
-}
-section .container .cards .angular_front,
-section .container .cards .angular_back {
-  background-color: #0e72c3;
-  color: #ffffff;
-  border: 3.7px solid #ffffff;
-  border-radius: 17px;
-}
-section .container .cards .vue_front,
-section .container .cards .vue_back {
-  background-color: #f4f4f4;
-  color: rgba(0, 0, 0, 0.9);
-  border: 3.7px solid #42b883;
-  border-radius: 17px;
-}
-section .container .cards [class$="back"] {
-  -webkit-transform: rotateY(90deg);
-  transform: rotateY(90deg);
-  margin: 1rem 0;
-}
-section .container .cards [class$="front"] {
-  position: absolute;
-  margin: 1rem 0;
-}
-section .container .cards li:hover [class$="front"] {
-  -webkit-animation: flip 0.2s ease-in forwards;
-  animation: flip 0.2s ease-in forwards;
-}
-section .container .cards li:hover [class$="back"] {
-  animation: flip 0.2s 0.2s ease-out forwards reverse;
-}
-@-webkit-keyframes flip {
-  0% {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: rotateY(90deg);
-    transform: rotateY(90deg);
-  }
-}
+  padding: 0 2rem; }
+  section .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-auto-flow: dense;
+    grid-gap: 50px; }
+    section .container .cards .android_front,
+    section .container .cards .android_back {
+      background-color: #1b7662;
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
+    section .container .cards .stackoverflow_front,
+    section .container .cards .stackoverflow_back {
+      background-color: #f7f7f7;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #da680b;
+      border-radius: 17px; }
+    section .container .cards .ios_front,
+    section .container .cards .ios_back {
+      background-color: #171119;
+      color: rgba(255, 255, 255, 0.7);
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
+    section .container .cards .github_front,
+    section .container .cards .github_back {
+      background-color: #ffffff;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #646464;
+      border-radius: 17px; }
+    section .container .cards .gitkraken_front,
+    section .container .cards .gitkraken_back {
+      background-color: #0e1214;
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
+    section .container .cards .gitlab_front,
+    section .container .cards .gitlab_back {
+      background-color: #464242;
+      color: #ffffff;
+      border: 3.7px solid #ec2c12;
+      border-radius: 17px; }
+    section .container .cards .bootstrap_front,
+    section .container .cards .bootstrap_back {
+      background-color: #e4e4e4;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #8b27aa;
+      border-radius: 17px; }
+    section .container .cards .foundation_front,
+    section .container .cards .foundation_back {
+      background-color: #148d9f;
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
+    section .container .cards .grunt_front,
+    section .container .cards .grunt_back {
+      background-color: #d3d3d3;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #da680b;
+      border-radius: 17px; }
+    section .container .cards .nodejs_front,
+    section .container .cards .nodejs_back {
+      background-color: #f0f0f0;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #2eaa39;
+      border-radius: 17px; }
+    section .container .cards .jquery_front,
+    section .container .cards .jquery_back {
+      background-color: #dadada;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #1868fc;
+      border-radius: 17px; }
+    section .container .cards .ember_front,
+    section .container .cards .ember_back {
+      background-color: #ebebeb;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #ca3f2c;
+      border-radius: 17px; }
+    section .container .cards .sass_front,
+    section .container .cards .sass_back {
+      background-color: #220416;
+      color: #ffffff;
+      border: 3.7px solid #cd6799;
+      border-radius: 17px; }
+    section .container .cards .less_front,
+    section .container .cards .less_back {
+      background-color: #cfc4ce;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #867be9;
+      border-radius: 17px; }
+    section .container .cards .react_front,
+    section .container .cards .react_back {
+      background-color: #242424;
+      color: #ffffff;
+      border: 3.7px solid #00d8ff;
+      border-radius: 17px; }
+    section .container .cards .redux_front,
+    section .container .cards .redux_back {
+      background-color: #242424;
+      color: #ffffff;
+      border: 3.7px solid #7e37da;
+      border-radius: 17px; }
+    section .container .cards .angular_front,
+    section .container .cards .angular_back {
+      background-color: #0e72c3;
+      color: #ffffff;
+      border: 3.7px solid #ffffff;
+      border-radius: 17px; }
+    section .container .cards .vue_front,
+    section .container .cards .vue_back {
+      background-color: #f4f4f4;
+      color: rgba(0, 0, 0, 0.9);
+      border: 3.7px solid #42b883;
+      border-radius: 17px; }
+    section .container .cards [class$="back"] {
+      transform: rotateY(90deg);
+      margin: 1rem 0; }
+    section .container .cards [class$="front"] {
+      position: absolute;
+      margin: 1rem 0; }
+    section .container .cards li:hover [class$="front"] {
+      animation: flip 0.2s ease-in forwards; }
+    section .container .cards li:hover [class$="back"] {
+      animation: flip 0.2s 0.2s ease-out forwards reverse; }
 @keyframes flip {
   0% {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
+    transform: rotateY(0deg); }
   100% {
-    -webkit-transform: rotateY(90deg);
-    transform: rotateY(90deg);
-  }
-}
+    transform: rotateY(90deg); } }
 footer {
-  padding-bottom: 1rem;
-}
-footer p {
-  color: #ffffff;
-  text-align: center;
-}
+  padding-bottom: 1rem; }
+  footer p {
+    color: #ffffff;
+    text-align: center; }
 
 @media (max-width: 1024px) {
   header h1 {
     font-size: 2rem;
-    padding: 0.5rem;
-  }
-}
+    padding: 0.5rem; } }
 @media (max-width: 768px) {
   header h1 {
     font-size: 1.7rem;
     letter-spacing: 2px;
-    padding: 0.5rem;
-  }
+    padding: 0.5rem; }
 
   section .container .cards {
-    -ms-grid-columns: minmax(300px, 1fr);
-    grid-template-columns: minmax(300px, 1fr);
-  }
+    grid-template-columns: minmax(300px, 1fr); }
 
   footer p {
-    font-size: 0.9rem;
-  }
-}
+    font-size: 0.9rem; } }
+
+/*# sourceMappingURL=main.css.map */

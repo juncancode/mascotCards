@@ -81,7 +81,7 @@ section .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, auto));
     grid-auto-flow: dense;
-    grid-gap: 30px;
+    grid-gap: 50px;
     .android_front,
     .android_back {
       background-color: $android;
